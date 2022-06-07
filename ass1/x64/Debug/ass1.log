@@ -1,0 +1,119 @@
+﻿D:\VisualStudio\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1098,5): warning MSB8027: Two or more files with the name of Shader.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Renderer\Shader.cpp, shader.cpp.
+  Affine.cpp
+  GLApplication.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_widgets.cpp
+  CubeObject.cpp
+  Object.cpp
+  ObjectManager.cpp
+  ObjLoader.cpp
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(18,9): warning C4068: unknown pragma 'clang'
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(19,9): warning C4068: unknown pragma 'clang'
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(20,9): warning C4068: unknown pragma 'GCC'
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(21,9): warning C4068: unknown pragma 'GCC'
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(33,9): warning C4068: unknown pragma 'GCC'
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(34,9): warning C4068: unknown pragma 'clang'
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(148,25): warning C4474: 'sscanf' : too many arguments passed for format string
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(148,25): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  OpenGLBuffer.cpp
+D:\cs350_demo_framework\cs350+demo+framework\ass1\OpenGL\OpenGLBuffer.cpp(93,83): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+D:\cs350_demo_framework\cs350+demo+framework\ass1\OpenGL\OpenGLBuffer.cpp(164,102): warning C4267: 'argument': conversion from 'size_t' to 'GLint', possible loss of data
+  OpenGLMesh.cpp
+D:\cs350_demo_framework\cs350+demo+framework\ass1\OpenGL\OpenGLMesh.cpp(41,28): warning C4244: '=': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+  OpenGLRendererAPI.cpp
+D:\cs350_demo_framework\cs350+demo+framework\ass1\OpenGL\OpenGLRendererAPI.cpp(81,89): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+  OpenGLShader.cpp
+  Buffer.cpp
+  Camera.cpp
+  Light.cpp
+  RenderCommand.cpp
+  Renderer.cpp
+  RendererAPI.cpp
+  Generating Code...
+  Compiling...
+  Shader.cpp
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Renderer\Shader.cpp(42,28): warning C4101: 'exception': unreferenced local variable
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Renderer\Shader.cpp(54,28): warning C4101: 'exception': unreferenced local variable
+  Scene.cpp
+  shader.cpp
+  SimpleScene_Cube.cpp
+  SimpleScene_Quad.cpp
+D:\cs350_demo_framework\cs350+demo+framework\ass1\SimpleScene_Quad.cpp(43,25): warning C4834: discarding return value of function with 'nodiscard' attribute
+  Generating Code...
+x64\Debug\shader.obj : warning LNK4042: object specified more than once; extras ignored
+GLApplication.obj : error LNK2019: unresolved external symbol glewInit referenced in function main
+GLApplication.obj : error LNK2019: unresolved external symbol glfwInit referenced in function main
+GLApplication.obj : error LNK2019: unresolved external symbol glfwTerminate referenced in function main
+GLApplication.obj : error LNK2019: unresolved external symbol glfwWindowHint referenced in function main
+GLApplication.obj : error LNK2019: unresolved external symbol glfwCreateWindow referenced in function main
+GLApplication.obj : error LNK2019: unresolved external symbol glfwWindowShouldClose referenced in function main
+GLApplication.obj : error LNK2019: unresolved external symbol glfwPollEvents referenced in function main
+GLApplication.obj : error LNK2019: unresolved external symbol glfwSetInputMode referenced in function main
+Camera.obj : error LNK2001: unresolved external symbol glfwSetInputMode
+GLApplication.obj : error LNK2019: unresolved external symbol glfwGetKey referenced in function main
+Camera.obj : error LNK2001: unresolved external symbol glfwGetKey
+GLApplication.obj : error LNK2019: unresolved external symbol glfwMakeContextCurrent referenced in function main
+GLApplication.obj : error LNK2019: unresolved external symbol glfwSwapBuffers referenced in function main
+GLApplication.obj : error LNK2001: unresolved external symbol glewExperimental
+OpenGLBuffer.obj : error LNK2001: unresolved external symbol __glewBindBuffer
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewBindBuffer
+OpenGLBuffer.obj : error LNK2001: unresolved external symbol __glewBufferData
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewBufferData
+OpenGLBuffer.obj : error LNK2001: unresolved external symbol __glewBufferSubData
+OpenGLBuffer.obj : error LNK2001: unresolved external symbol __glewDeleteBuffers
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewDeleteBuffers
+OpenGLBuffer.obj : error LNK2001: unresolved external symbol __glewEnableVertexAttribArray
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewEnableVertexAttribArray
+OpenGLBuffer.obj : error LNK2001: unresolved external symbol __glewVertexAttribPointer
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewVertexAttribPointer
+OpenGLBuffer.obj : error LNK2001: unresolved external symbol __glewVertexAttribDivisor
+OpenGLBuffer.obj : error LNK2001: unresolved external symbol __glewCreateBuffers
+OpenGLBuffer.obj : error LNK2001: unresolved external symbol __glewCreateVertexArrays
+OpenGLBuffer.obj : error LNK2001: unresolved external symbol __glewBindVertexArray
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewBindVertexArray
+OpenGLBuffer.obj : error LNK2001: unresolved external symbol __glewDeleteVertexArrays
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewDeleteVertexArrays
+OpenGLRendererAPI.obj : error LNK2001: unresolved external symbol __glewDebugMessageCallback
+OpenGLRendererAPI.obj : error LNK2001: unresolved external symbol __glewDebugMessageControl
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewAttachShader
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewCompileShader
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewCreateProgram
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewCreateShader
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewDeleteProgram
+SimpleScene_Cube.obj : error LNK2001: unresolved external symbol __glewDeleteProgram
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewDeleteProgram
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewDeleteShader
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewDetachShader
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewGetProgramInfoLog
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewGetProgramiv
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewGetShaderInfoLog
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewGetShaderiv
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewGetUniformLocation
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewGetUniformLocation
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewLinkProgram
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewShaderSource
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewUniform1f
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewUniform1i
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewUniform3f
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewUniform4f
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewUniformMatrix3fv
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewUniformMatrix4fv
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewUniformMatrix4fv
+OpenGLShader.obj : error LNK2001: unresolved external symbol __glewUseProgram
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewUseProgram
+Camera.obj : error LNK2019: unresolved external symbol glfwGetMouseButton referenced in function "public: void __cdecl Camera::Inputs(struct GLFWwindow *)" (?Inputs@Camera@@QEAAXPEAUGLFWwindow@@@Z)
+Camera.obj : error LNK2019: unresolved external symbol glfwGetCursorPos referenced in function "public: void __cdecl Camera::Inputs(struct GLFWwindow *)" (?Inputs@Camera@@QEAAXPEAUGLFWwindow@@@Z)
+Camera.obj : error LNK2019: unresolved external symbol glfwSetCursorPos referenced in function "public: void __cdecl Camera::Inputs(struct GLFWwindow *)" (?Inputs@Camera@@QEAAXPEAUGLFWwindow@@@Z)
+SimpleScene_Cube.obj : error LNK2019: unresolved external symbol "unsigned int __cdecl LoadShaders(char const *,char const *)" (?LoadShaders@@YAIPEBD0@Z) referenced in function "public: virtual int __cdecl SimpleScene_Cube::Init(void)" (?Init@SimpleScene_Cube@@UEAAHXZ)
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol "unsigned int __cdecl LoadShaders(char const *,char const *)" (?LoadShaders@@YAIPEBD0@Z)
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewGenBuffers
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewDisableVertexAttribArray
+SimpleScene_Quad.obj : error LNK2001: unresolved external symbol __glewGenVertexArrays
+D:\cs350_demo_framework\cs350+demo+framework\Common\glfw\lib-vc2022\glfw3.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+D:\cs350_demo_framework\cs350+demo+framework\x64\Debug\ass1.exe : fatal error LNK1120: 53 unresolved externals

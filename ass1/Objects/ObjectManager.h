@@ -1,0 +1,30 @@
+//
+// Created by roland on 10/1/20.
+//
+
+#ifndef SIMPLE_SCENE_OBJECTMANAGER_H
+#define SIMPLE_SCENE_OBJECTMANAGER_H
+
+#include "stdafx.h"
+#include "Object.h"
+#include "CubeObject.h"
+#include "SphereObject.h"
+
+class ObjectManager {
+    std::vector<SharedPtr<Object>> Objects;
+public:
+
+    //template<typename T>
+    //SharedPtr<T> CreateObject();
+    // 
+    SharedPtr<Object> CreateObject();
+    SharedPtr<CubeObject> CreateCubeObject();
+    SharedPtr<SphereObject> CreateSphereObject();
+    // Reminder: NEVER CREATE AN UPDATE FOR ALL OBJECTS HERE
+    // need to rethink update if you do.
+
+    void RenderAllObject();
+};
+
+
+#endif //SIMPLE_SCENE_OBJECTMANAGER_H
