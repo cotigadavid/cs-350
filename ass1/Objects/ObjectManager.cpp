@@ -45,3 +45,31 @@ SharedPtr<SphereObject> ObjectManager::CreateSphereObject()
 	this->Objects.emplace_back(obj);
 	return obj;
 }
+
+SharedPtr<TriangleObject> ObjectManager::CreateTriangleObject()
+{
+	SharedPtr<TriangleObject> obj = CreateSharedPtr<TriangleObject>();
+	this->Objects.emplace_back(obj);
+	return obj;
+}
+
+SharedPtr<PlaneObject> ObjectManager::CreatePlaneObject()
+{
+	SharedPtr<PlaneObject> obj = CreateSharedPtr<PlaneObject>();
+	this->Objects.emplace_back(obj);
+	return obj;
+}
+
+SharedPtr<RayObject> ObjectManager::CreateRayObject()
+{
+	SharedPtr<RayObject> obj = CreateSharedPtr<RayObject>();
+	this->Objects.emplace_back(obj);
+	return obj;
+}
+
+SharedPtr<PointObject> ObjectManager::CreatePointObject()
+{
+	SharedPtr<PointObject> obj = CreateSharedPtr<PointObject>();
+	this->Objects.emplace_back(obj);
+	return obj;
+}

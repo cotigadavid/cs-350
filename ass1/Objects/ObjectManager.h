@@ -9,6 +9,10 @@
 #include "Object.h"
 #include "CubeObject.h"
 #include "SphereObject.h"
+#include "TriangleObject.h"
+#include "PlaneObject.h"
+#include "RayObject.h"
+#include "PointObject.h"
 
 class ObjectManager {
     std::vector<SharedPtr<Object>> Objects;
@@ -20,6 +24,10 @@ public:
     SharedPtr<Object> CreateObject();
     SharedPtr<CubeObject> CreateCubeObject();
     SharedPtr<SphereObject> CreateSphereObject();
+    SharedPtr<TriangleObject> CreateTriangleObject();
+    SharedPtr<PlaneObject> CreatePlaneObject();
+    SharedPtr<RayObject> CreateRayObject();
+    SharedPtr<PointObject> CreatePointObject();
     // Reminder: NEVER CREATE AN UPDATE FOR ALL OBJECTS HERE
     // need to rethink update if you do.
 

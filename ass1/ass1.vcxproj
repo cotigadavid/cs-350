@@ -72,21 +72,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);D:\cs350_demo_framework\cs350+demo+framework\Common\glfw\lib-vc2022;D:\cs350_demo_framework\cs350+demo+framework\Common\glew\lib\Release\Win32</LibraryPath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);..\Common\glfw\lib-vc2022;..\Common\glew\lib\Release\Win32</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)Common\glfw\include;$(SolutionDir)Common\glew\include;$(SolutionDir)Common\glm;$(SolutionDir)Common;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Common\glfw\lib-vc2022;$(SolutionDir)Common\glew\lib\Release\Win32;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)Common\glfw\lib-vc2022;$(SolutionDir)Common\glew\lib\Release\Win32;$(LibraryPath);..\Common\glfw\lib-vc2022;..\Common\glew\lib\Release\Win32</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);D:\cs350_demo_framework\cs350+demo+framework\Common\glfw\lib-vc2022</LibraryPath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);..\Common\glfw\lib-vc2022;..\Common\glew\lib\Release\x64</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)Common\glfw\include;$(SolutionDir)Common\glew\include;$(SolutionDir)Common\glm;$(SolutionDir)Common;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Common\glew\lib\Release\x64;..\Common\glfw\lib-vc2022;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -119,7 +120,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -134,7 +135,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -143,7 +144,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);GLEW_STATIC</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);GLEW_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>..\Common\glfw\include;..\Common\glew\include;..\Common\freetype\include;ImGui;ImGui\examples\libs\gl3w;..\Common\glm;..\Common;..\ass1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -153,6 +154,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);glew32s.lib;glfw3.lib;opengl32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -167,7 +169,11 @@
     <ClInclude Include="Objects\Object.h" />
     <ClInclude Include="Objects\ObjectManager.h" />
     <ClInclude Include="Objects\ObjLoader.h" />
+    <ClInclude Include="Objects\PlaneObject.h" />
+    <ClInclude Include="Objects\PointObject.h" />
+    <ClInclude Include="Objects\RayObject.h" />
     <ClInclude Include="Objects\SphereObject.h" />
+    <ClInclude Include="Objects\TriangleObject.h" />
     <ClInclude Include="OpenGL\OpenGLBuffer.h" />
     <ClInclude Include="OpenGL\OpenGLMesh.h" />
     <ClInclude Include="OpenGL\OpenGLRendererAPI.h" />
@@ -180,7 +186,7 @@
     <ClInclude Include="Renderer\RendererAPI.h" />
     <ClInclude Include="Renderer\Shader.h" />
     <ClInclude Include="Scene.h" />
-    <ClInclude Include="shader.hpp" />
+    <ClInclude Include="ShaderFunc.hpp" />
     <ClInclude Include="SimpleScene_Cube.h" />
     <ClInclude Include="SimpleScene_Quad.h" />
     <ClInclude Include="stdafx.h" />
@@ -196,7 +202,11 @@
     <ClCompile Include="Objects\Object.cpp" />
     <ClCompile Include="Objects\ObjectManager.cpp" />
     <ClCompile Include="Objects\ObjLoader.cpp" />
+    <ClCompile Include="Objects\PlaneObject.cpp" />
+    <ClCompile Include="Objects\PointObject.cpp" />
+    <ClCompile Include="Objects\RayObject.cpp" />
     <ClCompile Include="Objects\SphereObject.cpp" />
+    <ClCompile Include="Objects\TriangleObject.cpp" />
     <ClCompile Include="OpenGL\OpenGLBuffer.cpp" />
     <ClCompile Include="OpenGL\OpenGLMesh.cpp" />
     <ClCompile Include="OpenGL\OpenGLRendererAPI.cpp" />
@@ -209,7 +219,7 @@
     <ClCompile Include="Renderer\RendererAPI.cpp" />
     <ClCompile Include="Renderer\Shader.cpp" />
     <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="shader.cpp" />
+    <ClCompile Include="ShaderFunc.cpp" />
     <ClCompile Include="SimpleScene_Cube.cpp" />
     <ClCompile Include="SimpleScene_Quad.cpp" />
   </ItemGroup>

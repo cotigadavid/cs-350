@@ -102,6 +102,7 @@ public:
     {
         Triangles,
         Lines,
+        Points,
         None
     };
 

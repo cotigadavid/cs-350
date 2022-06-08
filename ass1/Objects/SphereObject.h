@@ -3,13 +3,14 @@
 
 #include "Object.h"
 #include "ObjLoader.h"
-#include "OpenGL/OpenGLMesh.h"
-#include "OpenGL/OpenGLBuffer.h"
+
 
 class SphereObject : public Object
 {
 public:
 	SphereObject();
+
+	void UploadTransform();
 
 private:
 	std::optional<MeshUniquePtr> sphereMesh;
@@ -19,4 +20,4 @@ private:
 	SharedPtr<OpenGLIndexBuffer> IBO;
 };
 
-#endif // SIMPLE_SCENE_CUBE_H
+#endif // SIMPLE_SCENE_SPHEREOBJECT_H

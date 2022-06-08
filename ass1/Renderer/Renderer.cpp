@@ -25,7 +25,8 @@ void Renderer::EndScene() {
 void Renderer::Submit(const SharedPtr<Shader> &shader, const SharedPtr<VertexArray> &vertexArray,
                       const glm::mat4 &transform) {
     shader->Bind();
-    shader->SetMat4("model", transform);
+    if (transform != glm::mat4(-1.0f))
+        shader->SetMat4("model", transform);
     //shader->SetMat4("view", Renderer::sceneData->ViewMatrix);
     //shader->SetMat4("proj", Renderer::sceneData->ProjectionMatrix);
     vertexArray->Bind();

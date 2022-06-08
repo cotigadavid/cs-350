@@ -2,7 +2,7 @@
 
 
 #include "SimpleScene_Quad.h"
-#include <shader.hpp>
+#include <ShaderFunc.hpp>
 #include <glm/vec3.hpp>
 //#include <glm/detail/type_mat.hpp>
 

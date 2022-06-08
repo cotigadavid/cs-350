@@ -8,12 +8,16 @@
 #include "glm/glm.hpp"
 #include "stdafx.h"
 
+#include "OpenGL/OpenGLMesh.h"
+#include "OpenGL/OpenGLBuffer.h"
+#include "OpenGL/OpenGLShader.h"
+
 class VertexArray;
 class Shader;
 
 class Object {
 private:
-    glm::mat4 transform = {};
+    glm::mat4 transform = glm::mat4(-1.0f);
     SharedPtr<VertexArray> VAO;
 public:
     // Transform

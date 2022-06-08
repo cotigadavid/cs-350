@@ -91,6 +91,9 @@ void OpenGLRendererAPI::DrawIndexed(SharedPtr<VertexArray> const &vertexArray, u
         case VertexArray::PrimitiveType::Lines:
             drawType = GL_LINES;
             break;
+        case VertexArray::PrimitiveType::Points:
+            drawType = GL_POINTS;
+            break;
         case VertexArray::PrimitiveType::None:
             std::cout << "You have to specify draw mode!" << std::endl;
             DEBUG_BREAKPOINT();

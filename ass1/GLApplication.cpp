@@ -20,7 +20,7 @@
 
 // Local / project headers
 #include "Scene.h"
-#include "shader.hpp"
+#include "ShaderFunc.hpp"
 #include "SimpleScene_Quad.h"
 #include "SimpleScene_Cube.h"
 

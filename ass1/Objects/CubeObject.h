@@ -3,13 +3,14 @@
 
 #include "Object.h"
 #include "ObjLoader.h"
-#include "OpenGL/OpenGLMesh.h"
-#include "OpenGL/OpenGLBuffer.h"
+
 
 class CubeObject : public Object
 {
 public:
 	CubeObject();
+
+	void UploadTransform();
 
 private:
 	std::optional<MeshUniquePtr> cubeMesh;

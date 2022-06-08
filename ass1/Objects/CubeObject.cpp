@@ -1,5 +1,7 @@
 #include "CubeObject.h"
 
+#include "glm/glm.hpp"
+
 CubeObject::CubeObject()
 {
 	cubeMesh = ObjLoader::LoadObj("../Common/models/cube.obj");
@@ -26,4 +28,21 @@ CubeObject::CubeObject()
 	VAO->Unbind();
 	VBO->Unbind();
 	IBO->Unbind();
+}
+
+void CubeObject::UploadTransform()
+{
+	glm::mat4 trans = glm::mat4(1.0f);
+	glm::mat4 rot = glm::mat4(1.0f);
+	glm::mat4 scale = glm::mat4(1.0f);
+
+	trans = glm::translate(trans, cubeMesh->get()->translation);
+	rot = glm::mat4_cast(cubeMesh->get()->rotation);
+	scale = glm::scale(scale, cubeMesh->get()->scale);
+
+	std::vector<SharedPtr<Shader>> shaders = GetShaders();
+
+	glm::mat4 transform = trans * rot * scale;
+
+	SetTransform(transform);
 }

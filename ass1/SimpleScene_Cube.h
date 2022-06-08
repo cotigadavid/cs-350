@@ -17,8 +17,13 @@
 #include "Objects/Object.h"
 #include "Objects/ObjLoader.h"
 #include "Objects/ObjectManager.h"
+
 #include "Objects/CubeObject.h"
 #include "Objects/SphereObject.h"
+#include "Objects/TriangleObject.h"
+#include "Objects/PlaneObject.h"
+#include "Objects/RayObject.h"
+#include "Objects/PointObject.h"
 
 
 #include "Renderer/Renderer.h"
@@ -56,9 +61,11 @@ private:
 	void SetupNanoGUI(GLFWwindow* pWwindow) override;
 
 	// data members
-	GLuint  programID;
+	GLuint programID;
+	GLuint programID2;
 
-	SharedPtr<OpenGLShader> shader;
+	SharedPtr<OpenGLShader> quadShader;
+	SharedPtr<OpenGLShader> lineShader;
 
 	//SharedPtr<Object> cubeObj;
 	
@@ -69,6 +76,10 @@ private:
 
 	SharedPtr<CubeObject> cubeObj;
 	SharedPtr<SphereObject> sphereObj;
+	SharedPtr<TriangleObject> triangleObj;
+	SharedPtr<PlaneObject> planeObj;
+	SharedPtr<RayObject> rayObj;
+	SharedPtr<PointObject> pointObj;
 };
 
 

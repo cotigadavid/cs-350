@@ -14,6 +14,8 @@ uniform vec4 lightColor;
 //uniform vec3 lightPos;
 uniform vec3 camPos;
 
+
+
 void main()
 {
 	float ambient = 0.20f;

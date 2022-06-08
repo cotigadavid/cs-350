@@ -1,1 +1,65 @@
-﻿
+﻿  Affine.cpp
+  GLApplication.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_widgets.cpp
+  CubeObject.cpp
+  Object.cpp
+  ObjectManager.cpp
+  ObjLoader.cpp
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(18,9): warning C4068: unknown pragma 'clang'
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(19,9): warning C4068: unknown pragma 'clang'
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(20,9): warning C4068: unknown pragma 'GCC'
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(21,9): warning C4068: unknown pragma 'GCC'
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(33,9): warning C4068: unknown pragma 'GCC'
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(34,9): warning C4068: unknown pragma 'clang'
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(148,25): warning C4474: 'sscanf' : too many arguments passed for format string
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Objects\ObjLoader.cpp(148,25): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  PlaneObject.cpp
+  PointObject.cpp
+  RayObject.cpp
+  SphereObject.cpp
+  TriangleObject.cpp
+  OpenGLBuffer.cpp
+D:\cs350_demo_framework\cs350+demo+framework\ass1\OpenGL\OpenGLBuffer.cpp(93,83): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+D:\cs350_demo_framework\cs350+demo+framework\ass1\OpenGL\OpenGLBuffer.cpp(164,102): warning C4267: 'argument': conversion from 'size_t' to 'GLint', possible loss of data
+  OpenGLMesh.cpp
+D:\cs350_demo_framework\cs350+demo+framework\ass1\OpenGL\OpenGLMesh.cpp(41,28): warning C4244: '=': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+  OpenGLRendererAPI.cpp
+D:\cs350_demo_framework\cs350+demo+framework\ass1\OpenGL\OpenGLRendererAPI.cpp(81,89): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+  OpenGLShader.cpp
+  Buffer.cpp
+  Compiling...
+  Camera.cpp
+  Light.cpp
+  RenderCommand.cpp
+  Renderer.cpp
+  RendererAPI.cpp
+  Shader.cpp
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Renderer\Shader.cpp(42,28): warning C4101: 'exception': unreferenced local variable
+D:\cs350_demo_framework\cs350+demo+framework\ass1\Renderer\Shader.cpp(54,28): warning C4101: 'exception': unreferenced local variable
+  Scene.cpp
+  ShaderFunc.cpp
+  SimpleScene_Cube.cpp
+  SimpleScene_Quad.cpp
+D:\cs350_demo_framework\cs350+demo+framework\ass1\SimpleScene_Quad.cpp(43,25): warning C4834: discarding return value of function with 'nodiscard' attribute
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+GLApplication.obj : error LNK2001: unresolved external symbol glfwSwapBuffers
+GLApplication.obj : error LNK2001: unresolved external symbol glfwGetKey
+GLApplication.obj : error LNK2001: unresolved external symbol glfwTerminate
+GLApplication.obj : error LNK2001: unresolved external symbol glfwPollEvents
+GLApplication.obj : error LNK2001: unresolved external symbol glfwInit
+GLApplication.obj : error LNK2001: unresolved external symbol glfwCreateWindow
+GLApplication.obj : error LNK2001: unresolved external symbol glfwWindowHint
+GLApplication.obj : error LNK2001: unresolved external symbol glfwSetInputMode
+GLApplication.obj : error LNK2001: unresolved external symbol glfwMakeContextCurrent
+GLApplication.obj : error LNK2001: unresolved external symbol glfwWindowShouldClose
+Camera.obj : error LNK2001: unresolved external symbol glfwGetMouseButton
+Camera.obj : error LNK2001: unresolved external symbol glfwSetCursorPos
+Camera.obj : error LNK2001: unresolved external symbol glfwGetCursorPos
+D:\cs350_demo_framework\cs350+demo+framework\x64\Release\ass1.exe : fatal error LNK1120: 13 unresolved externals

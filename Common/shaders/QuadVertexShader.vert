@@ -10,8 +10,13 @@ out vec3 crntPos;
 uniform mat4 model;
 uniform mat4 camMatrix;
 
+//uniform mat4 translation;
+//uniform mat4 rotation;
+//uniform mat4 scale;
+
 void main()
 {
+	//crntPos = vec3(model * translation * -rotation * scale * vec4(aPos, 1.0f));
 	crntPos = vec3(model * vec4(aPos, 1.0f));
 	gl_Position = camMatrix * vec4(crntPos, 1.0);
 	normal = aNormal;
